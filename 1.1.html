@@ -2,6 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <style>
+    	a.test{
+    		font-weight: bold;
+    	}
+    </style>
     <title>Demo</title>
 </head>
 <body>
@@ -15,7 +20,11 @@
     		event.preventDefault();
     	})// body...
     })// Your code goes here.
- 
+ 	$("a").addClass("test");
+ 	function rmClass(){
+ 		$("a").removeClass("test");
+ 	}
     </script>
+    <button onclick="rmClass()">rmClass</button>
 </body>
 </html>
